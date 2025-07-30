@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    outDir: 'dist', // Make sure Vercel knows the output folder
+    emptyOutDir: true, // Clean before each build (optional, but helpful)
+  },
 });
